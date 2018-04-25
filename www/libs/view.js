@@ -110,8 +110,9 @@ var app = function(app) {
 
 
 // Change Color of Notes
-        var rectangle = v.rectangle = new Rectangle(80, 80, model.colors[0])
+        var rectangle = v.rectangle = new Rectangle(40, 40, model.colors[0])
             .center(content)
+            .mov(100,100)
             .cur();
         rectangle.drag();
 
