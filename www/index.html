@@ -38,7 +38,13 @@ frame.on("ready", function() {
     frame.outerColor = "#444";
     frame.color = "#ddd";
 
-
+		frame.loadAssets(["cork.png"], "Images/");
+		frame.on("complete", function(){
+			stage.update(logo);
+				var doodle = frame.asset("cork.png")
+						.sca(.1)
+						.center(header)
+		});
 	var layoutManager = new LayoutManager();
 
     var model = new app.Model();

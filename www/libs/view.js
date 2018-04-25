@@ -10,8 +10,8 @@ var app = function(app) {
 
         // ~~~~~~~  HEADER ~~~~~~~~~~~
         var header = new Container(500,100).addTo(page1);
-        var logo = new Label("PostMate").center(header);
-
+        var logo = new Label("PostMate😃").center(header);
+        
 
         // ~~~~~~~  CONTENT ~~~~~~~~~~~
         var content = new Container(500,500).addTo(page1);
@@ -95,7 +95,7 @@ var app = function(app) {
         .mov(-211, -75)
         .cur();
     rectangle.drag();
-    var textArea = new TextArea(frame, 50, 50);
+    var textArea = new TextArea(frame, 50, 10);
 textArea.center(stage);
 
 var label = new Label({text:""}).addTo(v.rectangle).pos(30,20);
@@ -142,7 +142,7 @@ textArea.on("input", function() {
         // ~~~~~~~  LAYOUT ~~~~~~~~~~~
 
         var layout2 = v.layout2 = new Layout(page2,[
-            {object:header, marginTop:5, backgroundColor:frame.white},
+            {object:header, marginTop:5, backgroundColor:frame.blue},
             {object:content, marginTop:5, backgroundColor:frame.brown},
             {object:footer, marginTop:5, maxWidth:90, minHeight:15}
         ], 5, frame.white, null, new Shape(), stage);
