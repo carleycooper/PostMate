@@ -75,7 +75,7 @@ var app = function(app) {
 
     // Button to Make new Post It Notes
     	var button2 = new Button({
-    		width:120, height:80,
+    		width:70, height:60,
     		label:"+",
     		color:frame.blue,
     		gloss:.1,
@@ -83,7 +83,7 @@ var app = function(app) {
     		borderColor:"#fff", borderWidth:3
     	})
     		.center(content)
-    		.mov(900);
+    		.mov(15, -68);
 
 
 
@@ -92,6 +92,7 @@ var app = function(app) {
     var rectangle = v.rectangle = new Rectangle(100, 100, model.colors[0])
         //.Shadow("#000000", 5, 5, 10)
         .center(content)
+        .mov(-210, -75)
         .cur();
     rectangle.drag();
 	});
@@ -112,7 +113,7 @@ var app = function(app) {
 // Change Color of Notes
         var rectangle = v.rectangle = new Rectangle(40, 40, model.colors[0])
             .center(content)
-            .mov(500,500)
+            .mov(-210, -75)
             .cur();
         rectangle.drag();
 
