@@ -92,7 +92,7 @@ var app = function(app) {
     var rectangle = v.rectangle = new Rectangle(100, 100, model.colors[0])
         //.Shadow("#000000", 5, 5, 10)
         .center(content)
-        .mov(-210, -75)
+        .mov(-211, -75)
         .cur();
     rectangle.drag();
 	});
