@@ -95,6 +95,14 @@ var app = function(app) {
         .mov(-211, -75)
         .cur();
     rectangle.drag();
+    var textArea = new TextArea(frame, 50, 50);
+textArea.center(stage);
+
+var label = new Label({text:""}).addTo(v.rectangle).pos(30,20);
+textArea.on("input", function() {
+   label.text = textArea.text;
+   stage.update();
+});
 	});
 
 
