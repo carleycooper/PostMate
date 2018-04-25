@@ -89,7 +89,7 @@ var app = function(app) {
 
 // Post It Notes on Button Click
 	button2.on("click", function() {
-    var rectangle = v.rectangle = new Rectangle(150, 150, model.colors[0])
+    var rectangle = v.rectangle = new Rectangle(100, 100, model.colors[0])
         //.Shadow("#000000", 5, 5, 10)
         .center(content)
         .cur();
