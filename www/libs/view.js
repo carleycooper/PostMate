@@ -34,16 +34,29 @@ var app = function(app) {
         layoutManager.add(layout1);
 
         var content = new Container(500,500).addTo(page1);
-        var title = "What's on your mind?";
-	      var label = new Label(title, 30, null, "#FFF")
+        var title = "Emoji Lovers IOS";
+	      var label = new Label(title, 20, null, "#FFF")
 		      .addTo(stage)
           .center(content)
+          .mov(-160,-40)
 
-          var title = "Collect and store your favourite emojis on colorful sticky notes.";
-  	      var label = new Label(title, 30, null, "#FFF")
+          var title = "Collect and store your favourite emojis on colorful \nsticky notes.";
+  	      var label = new Label(title, 12, null, "#FFF")
   		      .addTo(stage)
             .center(content)
-            .pos(110,340)
+            .mov(-100,20)
+
+            var title = "Click the + icon and pick a colour from the\n yellow box.";
+    	      var label = new Label(title, 12, null, "#FFF")
+    		      .addTo(stage)
+              .center(content)
+              .mov(-121,60)
+
+              var title = "Then click the box in the small bottom corner to \nadd an emoji. Arrange and add more to \nyour collection!";
+      	      var label = new Label(title, 12, null, "#FFF")
+      		      .addTo(stage)
+                .center(content)
+                .mov(-105,100)
 
 
 
@@ -56,7 +69,7 @@ var app = function(app) {
 
         // ~~~~~~~  HEADER ~~~~~~~~~~~
         var header = new Container(500,100).addTo(page2);
-        var logo = new Label("PostMate").center(header);
+        var logo = new Label("PostMate🎉").center(header);
 
 
         // ~~~~~~~  CONTENT ~~~~~~~~~~~
