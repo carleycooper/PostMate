@@ -42,7 +42,7 @@ var app = function(app) {
           var title = "Collect and store your favourite emojis on colorful sticky notes.";
   	      var label = new Label(title, 30, null, "#FFF")
   		      .addTo(stage)
-            .addTo(content)
+            .center(content)
             .pos(110,340)
 
 
