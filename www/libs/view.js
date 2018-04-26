@@ -52,7 +52,7 @@ var app = function(app) {
               .center(content)
               .mov(-121,60)
 
-              var title = "Then click the box in the small bottom corner to \nadd an emoji. Arrange and add more to \nyour collection!";
+              var title = "Then click the box in the right bottom corner to \nadd an emoji. Arrange and add more to \nyour collection!";
       	      var label = new Label(title, 12, null, "#FFF")
       		      .addTo(stage)
                 .center(content)
