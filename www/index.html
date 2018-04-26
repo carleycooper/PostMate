@@ -80,49 +80,7 @@ frame.on("ready", function() {
 
 <meta name="viewport" content="width=device-width, user-scalable=no" />
 
-<style>
-@import url(https://fonts.googleapis.com/css?family=Lato);
-body{
-  background-color: brown;
-    width: 100%;
-    background: #eab92d;
 
-  overflow:hidden;
-}
-.topBar{
-  z-index:1;
-  position:absolute;
-  width:200px;
-  height:40px;
-  background-color:yellow;
-}
-.form{
-	z-index:1;
-  margin-top:40px;
-  position:absolute;
-  width:200px;
-  height:160px;
-  background-color:yellow;
-  -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
-
-}
-.textAria{
-	z-index:1;
-  position:absolute;
-  border-color:red;
-  width:180px;
-  height:140px;
-  position:absolute;
-  margin:10px;
-  font-family: 'Lato', sans-serif;
-  overflow:hide;
-}
-.textAria:focus{
-	z-index:1;
-  outline: 0;
-}
-</style>
 </head>
 
 <body>
@@ -135,14 +93,6 @@ body{
     </div>
   </div>
 </div> -->
-<span>Some text</span>
+
 </body>
-<script type="text/javascript">
-$('span').bind('dblclick', function() {
-        $(this).attr('contentEditable', true);
-    }).blur(
-        function() {
-            $(this).attr('contentEditable', false);
-        });
-</script>
 </html>
